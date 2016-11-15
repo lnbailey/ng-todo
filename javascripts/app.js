@@ -1,5 +1,42 @@
 "use strict";
 
-console.log("inside app.js")
+var app = angular.module("TodoApp", []);
 
+app.controller("NavCtrl", function($scope){
+	$scope.navItems=[{name:"Logout"},{name:"All Items"},{name:"New Item"}];
+});
 
+app.controller("TodoCtrl", function($scope){
+	$scope.welcome="hello";
+	$scope.showListView=true;
+	$scope.items=[
+		{
+			id:0,
+			task:"mow the lawn",
+			isCompleted: true,
+			assignedTo: "Zoe"
+		},
+		{
+			id:0,
+			task:"take out the trash",
+			isCompleted: true,
+			assignedTo: "William"
+		},
+		{
+			id:0,
+			task:"mop the floors",
+			isCompleted: false,
+			assignedTo: "Nathan"
+		}
+	];
+
+	$scope.allItems=function(){
+	console.log("You clicked allItems");
+	$scope.showListView=true;
+	};
+
+	$scope.newItem=function(){
+	console.log("You clicked newItems");
+	$scope.showListView=false;
+	};
+});
