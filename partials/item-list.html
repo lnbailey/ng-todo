@@ -3,7 +3,7 @@
         <div class="col-xs-6 col-xs-offset-3">
             <div class="input-group">
                 <span class="input-group-btn">
-                    <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                    <button class="btn btn-default"><i class="fa fa-search">Search</i></button>
                 </span>
                 <input type="text" class="form-control" placeholder="Search for ..." ng-model="searchText">
             </div>
@@ -14,7 +14,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="col-xs-1"><input type="checkbox" ng-checked="item.isCompleted"></div>
-                    <div class="col-xs-9">{{item.task}}</div>
+                    <div class="col-xs-9"><a href="#/items/view/{{item.id}}">{{item.task}}</a></div>
                     <div class="col-xs-1">{{item.assignedTo}}</div>
                     <div class="col-xs-1" ng-click="deleteItem(item.id)"><button class="btn btn-danger fa fa-trash-o"></button></div>
                 </div>
@@ -26,7 +26,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="col-xs-1"><input type="checkbox" ng-checked="item.isCompleted"></div>
-                    <div class="col-xs-9">{{item.task}}</div>
+                    <div class="col-xs-9"><a href="#/item/view{{item.id}}">{{item.task}}</a></div>
                     <div class="col-xs-1">{{item.assignedTo}}</div>
                     <div class="col-xs-1" ng-click="deleteItem(item.id)"><button class="btn btn-danger fa fa-trash-o"></button></div>
                 </div>
