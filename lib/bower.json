@@ -3,10 +3,10 @@
   "description": "",
   "main": "index.js",
   "authors": [
-    "Zoe Ames <zoeames@gmail.com>"
+    "Ellen Bailey <ellen@lndesigns.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/zoeames/angular-todo",
+  "homepage": "https://github.com/lnbailey/angular-todo",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -17,6 +17,7 @@
   "dependencies": {
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
-    "angular": "^1.5.8"
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8"
   }
 }
