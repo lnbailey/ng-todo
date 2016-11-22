@@ -16,4 +16,11 @@ app.controller("ItemListCtrl", function($scope, ItemFactory){
 			getItems();
 		});
 	};
+
+	$scope.inputChange = function(thingy) {
+		// console.log("thingy", thingy);
+		ItemFactory.editItem(thingy).then(function(response){
+			// console.log("ctlr inputChange response:", response);
+		})
+	};
 });
